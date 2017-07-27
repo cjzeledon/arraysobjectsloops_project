@@ -27,6 +27,7 @@ function smallNums(){
     // Your answer here:
     for (i = 0; i < numbers.length; i++){
       if (numbers[i] < 10){
+        smallNums.push(numbers[i]);
 
       }
     }
@@ -116,9 +117,14 @@ let second = [ "think", "stand", "cheese", "break", "numinous", "mouse", "close"
 function union(){
     let same = [];
     // Your answer here:
-    for (i = 0; i < first.length && i < second.length; i++){
-      if (first[i] === second[i]){
-        return same[i]
+    for (let i = 0; i < first.length && i < second.length; i++){
+      if (first[i] === second[i]) {
+          same.push(first[i]);
+
+          // compare to:
+          // same[i] = first[i];
       }
     }
+
+    return same;
 }
