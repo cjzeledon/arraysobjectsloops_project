@@ -19,7 +19,7 @@ function getFourthNum(){
     return numbers[3];
 }
 
-/*     -------------- WORK ON NUMBER 2 ---------------------
+/*
 2. Iterate over the "numbers" array. Push any numbers less than 10 onto "smallNums". Return "smallNums".
 */
 function smallNums(){
@@ -107,7 +107,7 @@ function interleave(){
 }
 
 
-/* -------------- WORK ON NUMBER 8 ----------------------
+/*
 8. Iterate over the "first" and "second" arrays. Compare the values for both arrays. If the arrays values are the same, then store that value in the "same" array. Return "same".
 */
 
