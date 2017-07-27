@@ -19,15 +19,18 @@ function getFourthNum(){
     return numbers[3];
 }
 
-/*
+/*     -------------- WORK ON NUMBER 2 ---------------------
 2. Iterate over the "numbers" array. Push any numbers less than 10 onto "smallNums". Return "smallNums".
 */
 function smallNums(){
     let smallNums = [];
     // Your answer here:
     for (i = 0; i < numbers.length; i++){
+      if (numbers[i] < 10){
 
+      }
     }
+    return smallNums;
 }
 
 /*
@@ -35,6 +38,8 @@ function smallNums(){
 */
 function addNums(){
     // Your answer here:
+    numbers.push(12, 99, 101);
+    return numbers;
 }
 
 
@@ -58,6 +63,8 @@ let film = {
 */
 function addBoxOffice(){
     // Your answer here:
+    film.boxoffice = 269061;
+    return film;
 }
 
 /*
@@ -65,6 +72,8 @@ function addBoxOffice(){
 */
 function addActor(){
     // Your answer here:
+    film.actors.push("Yukiko Shimazaki");
+    return film;
 }
 
 /*
@@ -72,11 +81,9 @@ function addActor(){
 */
 function getLosses(){
     // Your answer here:
+    loss = film.boxoffice - film.budget;
+    return loss;
 }
-
-
-
-
 
 
 /*
@@ -91,14 +98,15 @@ let letterVals = [ "v", "x", "r", "f", "p" ];
 function interleave(){
     let vals = [];
     // Your answer here:
+    for (i = 0; i < numberVals.length && i < letterVals.length; i++){
+      vals[i] = letterVals[i] + numberVals[i];
+
+    }
+    return vals
 }
 
 
-
-
-
-
-/*
+/* -------------- WORK ON NUMBER 8 ----------------------
 8. Iterate over the "first" and "second" arrays. Compare the values for both arrays. If the arrays values are the same, then store that value in the "same" array. Return "same".
 */
 
@@ -108,4 +116,9 @@ let second = [ "think", "stand", "cheese", "break", "numinous", "mouse", "close"
 function union(){
     let same = [];
     // Your answer here:
+    for (i = 0; i < first.length && i < second.length; i++){
+      if (first[i] === second[i]){
+        return same[i]
+      }
+    }
 }
